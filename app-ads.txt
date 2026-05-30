@@ -1,3 +1,6 @@
 # app-ads.txt
 # This file is used by advertising networks to verify ad inventory.
 # See https://iabtechlab.com/ads-txt/ for more information.
+
+# Google AdMob
+google.com, pub-9812542508569697, DIRECT, f08c47fec0942fa0
