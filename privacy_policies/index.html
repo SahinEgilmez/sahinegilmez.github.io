@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Şahin Eğilmez tarafından geliştirilen uygulamaların gizlilik politikaları." />
+  <title>Gizlilik Politikaları | Şahin Eğilmez</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17201c;
+      --muted: #66716b;
+      --paper: #f7f5ef;
+      --surface: #ffffff;
+      --accent: #176b4d;
+      --accent-soft: #e3f0e9;
+      --line: #d9ddd9;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(23, 107, 77, 0.04) 1px, transparent 1px),
+        var(--paper);
+      background-size: 100% 32px;
+    }
+
+    header, main, footer {
+      width: min(760px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    header { padding: 72px 0 32px; }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-family: 'Trebuchet MS', sans-serif;
+      line-height: 1.7;
+    }
+
+    .policy-list {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .policy-link {
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 24px 4px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .policy-link:hover .policy-title,
+    .policy-link:focus-visible .policy-title { color: var(--accent); }
+
+    .app-mark {
+      display: grid;
+      width: 52px;
+      height: 52px;
+      place-items: center;
+      border: 1px solid #bad1c6;
+      border-radius: 8px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 700;
+    }
+
+    .policy-title {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 700;
+      transition: color 160ms ease;
+    }
+
+    .policy-meta {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      padding: 28px 0 56px;
+      color: var(--muted);
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 0.82rem;
+    }
+
+    footer a { color: var(--accent); }
+
+    @media (max-width: 520px) {
+      header { padding-top: 48px; }
+      .policy-link { grid-template-columns: 44px 1fr auto; gap: 14px; }
+      .app-mark { width: 44px; height: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Şahin Eğilmez</p>
+    <h1>Gizlilik Politikaları</h1>
+    <p class="intro">Uygulama ve oyunlarıma ait güncel gizlilik politikalarına aşağıdan ulaşabilirsiniz.</p>
+  </header>
+
+  <main>
+    <nav class="policy-list" aria-label="Uygulama gizlilik politikaları">
+      <a class="policy-link" href="siirhane/">
+        <span class="app-mark" aria-hidden="true">Ş</span>
+        <span>
+          <span class="policy-title">Şiirhane</span>
+          <span class="policy-meta">Mobil uygulama gizlilik politikası</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <a href="/">sahinegilmez.github.io</a>
+  </footer>
+</body>
+</html>
