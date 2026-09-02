@@ -5,6 +5,10 @@ Personal web site
 
 - Policy directory: `https://sahinegilmez.github.io/privacy_policies/`
 - Şiirhane: `https://sahinegilmez.github.io/privacy_policies/siirhane/`
+- Math Puzzle: `https://sahinegilmez.github.io/privacy_policies/math-puzzle/`
+- SOS Game: `https://sahinegilmez.github.io/privacy_policies/sos-game/`
+- AR Ingilizce: `https://sahinegilmez.github.io/privacy_policies/ar-ingilizce/`
+- Dumbledore AR: `https://sahinegilmez.github.io/privacy_policies/dumbledore-ar/`
 
 To add another application, create `privacy_policies/<app-name>/index.html` and add its link to `privacy_policies/index.html`.
 
